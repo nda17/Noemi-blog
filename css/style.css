@@ -1,13 +1,17 @@
-  @font-face {
-    font-family: 'OpenSans-Bold';
-    src: local('OpenSans-Bold');
-    src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
+ @font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+      url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
   }
 
   @font-face {
-    font-family: 'OpenSans-Regular';
-    src: local('OpenSans-Regular');
-    src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+      url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
   }
 
   body {
@@ -99,8 +103,9 @@
 
   .menu-link {
     text-decoration: none;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
     font-size: 13px;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
     color: #ffffff;
   }
 
@@ -113,15 +118,15 @@
   }
 
   .main_information {
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    color: #ffffff;
-    width: 690px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 49px;
+    font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-size: 45px;
     line-height: 75px;
+    color: #ffffff;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 49px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -157,13 +162,15 @@
 
   .trand-title {
     display: block;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 29.15px;
+    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     color: rgb(15, 13, 14);
-    font-family: OpenSans-Bold, Arial, sans-serif;
-    text-decoration: none;
+
   }
 
   .card-trands {
@@ -220,13 +227,13 @@
 
   .trands-slogan {
     display: block;
-    color: #ebeaea;
-    text-transform: uppercase;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 29.15px;
-    ;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #ebeaea;
   }
 
   .trands-slogan:hover {
@@ -245,6 +252,11 @@
     width: 100%;
   }
 
+  .container-image:hover {
+    filter: grayscale(1);
+    transition: all 0.8s ease 0s;
+  }
+
   .block-link-topik {
     /*Блок с ссылками постов*/
     display: flex;
@@ -254,12 +266,13 @@
   .link-topik {
     width: 55px;
     height: 12px;
-    text-transform: uppercase;
-    margin-right: 15px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    color: #b59f5b;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
     text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 15px;
+    color: #b59f5b;
   }
 
   .link-topik:hover {
@@ -271,12 +284,14 @@
     display: block;
     width: 367px;
     min-height: 40px;
-    color: #0f0d0e;
-    text-decoration: none;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 20px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    margin-bottom: 33px;
+    line-height: 24px;
+    text-decoration: none;
     text-transform: uppercase;
+    color: #0f0d0e;
+    margin-bottom: 33px;
   }
 
   .main-topik:hover {
@@ -289,25 +304,28 @@
 
   .block-date {
     display: inline;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
-    color: #989898;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
+    color: #989898;
     margin-right: 8px;
   }
 
   .block-author {
     display: inline;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    color: #000000;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 12px;
+    color: #000000;
   }
 
   .block-text {
     /*Блок с текстом постов*/
-    font-family: "OpenSans-Regular", Arial, sans-serif;
-    color: #0f0d0e;
-    font-size: 15px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
     line-height: 24px;
+    color: #0f0d0e;
   }
 
   /*Боковая панель:*/
@@ -324,11 +342,12 @@
 
   .side-bar-title {
     display: block;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
     color: #0f0d0e;
     margin-bottom: 27px;
   }
@@ -341,12 +360,12 @@
   .side-bar-title::after,
   .trand-title::after {
     /*черта под h3 aside*/
-    width: 66px;
-    content: "";
-    margin: 0 auto;
-    border-bottom: 3px solid #e1d9bd;
     display: block;
+    width: 66px;
+    margin: 0 auto;
     padding-bottom: 14px;
+    content: "";
+    border-bottom: 3px solid #e1d9bd;
   }
 
   .block__posts {
@@ -359,8 +378,8 @@
   }
 
   .posts {
-    height: 70px;
     display: flex;
+    height: 70px;
     margin-bottom: 22px;
   }
 
@@ -384,7 +403,8 @@
     display: block;
     width: 183px;
     min-height: 10px;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     color: #7e7e7e;
     margin-bottom: 9px;
@@ -392,12 +412,13 @@
 
   .posts__topic {
     width: 183px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    color: #000000;
     line-height: 18px;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
   }
 
   .posts__topic:hover {
@@ -411,22 +432,22 @@
 
   .field-one {
     width: 100%;
-    position: relative;
     height: 49px;
-    box-sizing: border-box;
-    background: #f4f7f6;
-    border: 1px solid #f4f7f6;
     padding-left: 18px;
     padding-right: 48px;
+    box-sizing: border-box;
+    position: relative;
+    background: #f4f7f6;
+    border: 1px solid #f4f7f6;
     opacity: 0.9;
   }
 
   /*Общий класс для скрытого описания полей*/
   .visually-hidden {
     display: none;
-    position: absolute;
     width: 1px;
     height: 1px;
+    position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
   }
 
@@ -471,13 +492,14 @@
   .button-default {
     width: 100%;
     height: 48px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
     border-radius: 4%;
     border: 1px solid #b59f5b;
     background-color: #b59f5b;
     color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     cursor: pointer;
   }
 
@@ -502,18 +524,19 @@
   }
 
   .tags-item {
-    cursor: pointer;
     display: block;
     border: 3px solid #eeeeee;
     padding-left: 13px;
     padding-right: 13px;
     padding-bottom: 4px;
     padding-top: 4px;
-    text-decoration: none;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 12px;
+    text-decoration: none;
     text-transform: uppercase;
     color: #0f0d0e;
+    cursor: pointer;
   }
 
   .tags-item:hover {
@@ -532,9 +555,10 @@
   .categories-item {
     display: block;
     padding-bottom: 9px;
-    text-decoration: none;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
+    text-decoration: none;
     color: #000000;
   }
 
@@ -544,8 +568,9 @@
 
   .categories-number {
     margin-left: 5px;
-    font-size: 12px;
+    font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
+    font-size: 12px;
     color: #999966;
   }
 
@@ -559,6 +584,7 @@
     justify-content: center;
     width: 1200px;
     margin: 0 auto 64px auto;
+
   }
 
   .card-features {
@@ -581,20 +607,22 @@
   }
 
   .main-title-features {
-    color: #0f0d0e;
-    text-decoration: none;
+    margin-bottom: 15px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
+    text-decoration: none;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    color: #0f0d0e;
   }
 
   .subtitle-features {
     margin-bottom: 25px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
     font-size: 15px;
     line-height: 22px;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
   }
 
   .link-posts-features {
@@ -620,32 +648,35 @@
   }
 
   .price-old {
-    color: #0f0d0e;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     text-transform: uppercase;
     text-decoration: line-through;
+    color: #0f0d0e;
   }
 
   .price-new {
-    color: #0f0d0e;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     text-transform: uppercase;
+    color: #0f0d0e;
   }
 
   .button-buy {
     width: 100%;
     height: 48px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
     border-radius: 4%;
     border: 1px solid #b59f5b;
     background-color: #b59f5b;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     cursor: pointer;
   }
 
@@ -655,10 +686,10 @@
 
   /*Подвал:*/
   .footer-block {
-    width: 1200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 1200px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -666,12 +697,12 @@
   }
 
   .container-footer {
+    width: 100%;
+    margin-bottom: 72px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 100%;
     background-color: #f5f7f6;
     opacity: 0.6;
-    margin-bottom: 72px;
   }
 
   .socials {
@@ -695,12 +726,13 @@
 
   .copyright-footer {
     margin: 0 auto;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    color: #999999;
     padding-bottom: 35px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    color: #999999;
   }
 
   /*Попап*/
@@ -740,14 +772,14 @@
   }
 
   .popup-close {
+    width: 20px;
+    height: 20px;
+    padding: 0px 0px 50px 0px;
     background-image: url(../icons/svg/form-x.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    width: 20px;
-    height: 20px;
     background-color: transparent;
     border: none;
-    padding: 0px 0px 50px 0px;
     text-indent: -9999px;
     cursor: pointer;
     position: relative;
@@ -771,20 +803,22 @@
 
   .form-hint {
     display: block;
-    font-size: 13px;
-    font-family: "OpenSans-Bold", Arial, sans-serif;
     margin-bottom: 12px;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
   }
 
   .field-popup {
-    background-color: #f4f7f6;
-    box-sizing: border-box;
     width: 100%;
     height: 48px;
-    border: 1px solid #f4f7f6;
     padding-left: 21px;
+    box-sizing: border-box;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: 400;
+    background-color: #f4f7f6;
+    border: 1px solid #f4f7f6;
     cursor: pointer;
-    font-family: "OpenSans-Regular", Arial, sans-serif;
     white-space: pre-line;
   }
 
@@ -796,12 +830,12 @@
   }
 
   .select {
+    width: 100%;
+    height: 48px;
     box-sizing: border-box;
     padding-left: 20px;
     border: 1px solid #f4f7f6;
     cursor: pointer;
-    width: 100%;
-    height: 48px;
     background-image: url(../icons/svg/form-arrows.svg);
     background-color: #f4f7f6;
     background-repeat: no-repeat;
@@ -818,17 +852,16 @@
   }
 
   .radio-group-text::before {
-    content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 20px;
     height: 20px;
+    margin-right: 8px;
+    content: "";
     background-image: url(../icons/svg/form-empty-circle.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
   }
 
   .radio-group {
@@ -886,6 +919,7 @@
     .menu-mobile {
       width: 35px;
       height: 4px;
+      border-radius: 10px;
       background: #ffffff;
       margin-bottom: 5px;
     }
@@ -895,6 +929,7 @@
     }
 
     .main_information {
+      max-width: 640px;
       font-size: 40px;
       line-height: 55px;
     }
@@ -1070,6 +1105,7 @@
     .menu-mobile {
       width: 35px;
       height: 4px;
+      border-radius: 10px;
       background: #ffffff;
       margin-bottom: 5px;
     }
@@ -1288,46 +1324,42 @@
     }
   }
 
-
-
-
   /* Mobile-landscape */
-  /* @media (max-width: 641px) and (orientation: landscape) {
-  .page-container {
-    width: 100%;
+  @media (max-width: 641px) and (orientation: landscape) {
+    .page-container {
+      width: 100%;
+    }
+
+    .container-trands {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .card-trands {
+      width: calc(50% - 1px);
+      margin: 0px 0px 2px 0px;
+    }
   }
 
-  .container-trands {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .card-trands {
-     width: calc(50% - 1px);
-    margin: 0px 0px 2px 0px;
-  }
-}  */
+  /* Tablet-landscape */
+  @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .page-container {
+      min-width: 768px;
+    }
 
-  /* Tablet-landscape
-@media (min-width: 641px) and (orientation: landscape) {
-  .page-container {
-    min-width: 768px;
-  }
+    .container-trands {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
 
-  .container-trands {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+    .card-trands {
+      width: calc(25% - 2px);
+      margin-bottom: 2px;
+    }
 
-  .card-trands {
-    width: calc(25% - 2px);
-    margin-bottom: 2px;
+    .container-trands-meta {
+      margin: 0px 10px 16px 10px;
+      padding: 30px 0px 32px 0px;
+    }
   }
-
-  .container-trands-meta {
-    margin: 0px 10px 16px 10px;
-    padding: 30px 0px 32px 0px;
-  }
-}
- */
