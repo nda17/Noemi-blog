@@ -24,7 +24,7 @@
   }
 
   /*-------------------------------------------------------------------*/
-  /*Desktop:*/
+  /*Desktop-first:*/
   .page-container {
     width: 100%;
     z-index: 1;
@@ -117,7 +117,7 @@
     display: none;
   }
 
-  .main_information {
+  .main-information {
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
     font-size: 45px;
@@ -170,7 +170,6 @@
     text-transform: uppercase;
     text-align: center;
     color: rgb(15, 13, 14);
-
   }
 
   .card-trands {
@@ -246,8 +245,8 @@
     margin-bottom: 61px;
   }
 
+  /*Общий блок с картинкой блоков*/
   .container-image {
-    /*Общий блок с картинкой блоков*/
     margin-right: 30px;
     width: 100%;
   }
@@ -257,8 +256,8 @@
     transition: all 0.8s ease 0s;
   }
 
+  /*Блок с ссылками постов*/
   .block-link-topik {
-    /*Блок с ссылками постов*/
     display: flex;
     margin-bottom: 10px;
   }
@@ -279,8 +278,8 @@
     text-decoration: underline;
   }
 
+  /*Блок темы постов*/
   .main-topik {
-    /*Блок темы постов*/
     display: block;
     width: 367px;
     min-height: 40px;
@@ -319,8 +318,8 @@
     color: #000000;
   }
 
+  /*Блок с текстом постов*/
   .block-text {
-    /*Блок с текстом постов*/
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -357,9 +356,9 @@
     color: #b59f5b;
   }
 
+  /*черта под h3 aside*/
   .side-bar-title::after,
   .trand-title::after {
-    /*черта под h3 aside*/
     display: block;
     width: 66px;
     margin: 0 auto;
@@ -368,8 +367,8 @@
     border-bottom: 3px solid #e1d9bd;
   }
 
-  .block__posts {
-    /*Блок с мини постами*/
+  /*Блок с мини постами*/
+  .block-posts {
     margin-bottom: 60px;
   }
 
@@ -387,19 +386,19 @@
     margin-bottom: 0px;
   }
 
-  .posts__image {
-    /*Общий блок с мини-контентным изображением*/
+  /*Общий блок с мини-контентным изображением*/
+  .posts-image {
     margin-right: 19px;
   }
 
-  .mini__posts {
-    /*Общий блок с мини-постом*/
+  /*Общий блок с мини-постом*/
+  .mini-posts {
     width: 183px;
     height: 70px;
     margin-bottom: 62px;
   }
 
-  .posts__date {
+  .posts-date {
     display: block;
     width: 183px;
     min-height: 10px;
@@ -410,7 +409,7 @@
     margin-bottom: 9px;
   }
 
-  .posts__topic {
+  .posts-topic {
     width: 183px;
     font-family: "OpenSans", Arial, sans-serif;
     font-weight: bold;
@@ -421,7 +420,7 @@
     color: #000000;
   }
 
-  .posts__topic:hover {
+  .posts-topic:hover {
     color: #b59f5b;
   }
 
@@ -543,13 +542,13 @@
     border: 3px solid #b59f5b;
   }
 
-  .categories-container:nth-child(n + 2) {
-    padding-top: 22px;
-  }
-
   .categories-container {
     display: flex;
     border-bottom: 2px solid #f5f7f6;
+  }
+
+  .categories-container-indent {
+    padding-top: 22px;
   }
 
   .categories-item {
@@ -591,8 +590,15 @@
     display: flex;
     width: 300px;
     flex-direction: column;
+    /* margin: 0px 113px 0px 0px; */
+  }
+
+  .card-features-indent {
     margin-right: 113px;
-    margin: 0px 113px 0px 0px;
+  }
+
+  .card-features-indent-desktop {
+    margin-right: 113px;
   }
 
   .card-features:last-child {
@@ -736,7 +742,7 @@
   }
 
   /*Попап*/
-  .popup_hidden {
+  .popup-hidden {
     display: none;
   }
 
@@ -792,10 +798,9 @@
     box-sizing: border-box;
   }
 
-  .form-popup:nth-child(n+2) {
-    margin-top: 25px;
+  .form-popup-indent {
+    padding-top: 25px;
   }
-
 
   .form-group {
     font-size: 15px;
@@ -869,8 +874,8 @@
     font-size: 15px;
   }
 
-  .radio-group:nth-of-type(n+2) {
-    margin-left: 15px;
+  .radio-group-indent {
+    margin-right: 15px;
   }
 
   .radio:checked~.radio-group-text::before {
@@ -928,7 +933,7 @@
       margin-bottom: 0px;
     }
 
-    .main_information {
+    .main-information {
       max-width: 640px;
       font-size: 40px;
       line-height: 55px;
@@ -955,7 +960,7 @@
     }
 
     .card-trands {
-      width: calc(50% - 1px);
+      width: 24.8%;
       margin: 0px 0px 2px 0px;
     }
 
@@ -1028,7 +1033,7 @@
       width: 293px;
     }
 
-    .card-features:nth-child(odd) {
+    .card-features-indent {
       margin-right: 68px;
     }
 
@@ -1045,7 +1050,7 @@
       margin: 0px 0px 50px 0px;
     }
 
-    .popup_hidden {
+    .popup-hidden {
       display: none;
     }
 
@@ -1114,7 +1119,7 @@
       margin-bottom: 0px;
     }
 
-    .main_information {
+    .main-information {
       width: 76.95%;
       font-size: 26px;
       line-height: 36px;
@@ -1238,7 +1243,7 @@
       font-size: 16px;
     }
 
-    .block__posts {
+    .block-posts {
       width: 100%;
       margin-bottom: 44px;
     }
@@ -1252,7 +1257,7 @@
       margin-bottom: 0px;
     }
 
-    .mini__posts {
+    .mini-posts {
       width: 183px;
       margin-bottom: 62px;
     }
@@ -1315,7 +1320,7 @@
       margin: 0px 0px 50px 0px;
     }
 
-    .popup_hidden {
+    .popup-hidden {
       display: none;
     }
 
@@ -1337,7 +1342,7 @@
     }
 
     .card-trands {
-      width: calc(50% - 1px);
+      width: 49.8%;
       margin: 0px 0px 2px 0px;
     }
   }
@@ -1354,7 +1359,7 @@
     }
 
     .card-trands {
-      width: calc(25% - 2px);
+      width: 24.8%;
       margin-bottom: 2px;
     }
 
