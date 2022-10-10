@@ -26,8 +26,8 @@
  /*-------------------------------------------------------------------*/
  /*Desktop-first:*/
  .page-container {
-   width: 100%;
-   z-index: 1;
+  max-width: 1700px;
+  margin: 0 auto;
  }
 
  /*Шапка:*/
@@ -39,7 +39,6 @@
    position: relative;
    background-color: #666666;
    min-width: 1200px;
-   max-width: 1700px;
    min-height: 450px;
    text-transform: uppercase;
    color: #ffffff;
@@ -92,9 +91,13 @@
    margin-right: 35px;
  }
 
- .menu-list-item:last-child {
-   margin-right: 0;
+ .menu-list-item-last-element {
+  margin: 0;
  }
+
+ .card-trands-last-element {
+  margin: 0;
+}
 
  .menu-link {
    text-decoration: none;
@@ -179,10 +182,6 @@
    width: 25%;
  }
 
- .card-trands:last-child {
-   margin-right: 0;
- }
-
  .card-trands::after {
    content: "";
    background-color: #000000;
@@ -209,6 +208,10 @@
  .card-trands-lemon {
    background-image: url(../img/desktop/base4.jpg);
  }
+
+ .card-trands-last-element {
+  margin: 0;
+}
 
  .container-trands-meta {
    display: flex;
@@ -380,8 +383,8 @@
    margin-bottom: 22px;
  }
 
- .posts:last-child {
-   margin-bottom: 0;
+ .posts-last-element {
+  margin: 0;
  }
 
  /*Общий блок с мини-контентным изображением*/
@@ -598,7 +601,7 @@
    margin-right: 113px;
  }
 
- .card-features:last-child {
+ .card-features-last-element {
    margin: 0;
  }
 
@@ -717,7 +720,7 @@
    margin-right: 25px;
  }
 
- .socials-item:last-child {
+ .card-features-last-element {
    margin: 0;
  }
 
@@ -887,487 +890,492 @@
 
  /*Tablet:*/
  @media (min-width: 641px) and (max-width: 1200px) {
-   .page-container {
-     min-width: 768px;
+
+   @media (orientation: portrait) {
+     .page-container {
+       min-width: 768px;
+     }
+
+     .header {
+       width: 100%;
+       min-width: 768px;
+       min-height: 392px;
+     }
+
+     .header-container {
+       justify-content: flex-start;
+     }
+
+     .nav-menu {
+       display: none;
+     }
+
+     .nav-menu-mobile {
+       width: 48px;
+       height: 48px;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 43px;
+       right: 65px;
+       z-index: 1;
+       opacity: 0.6;
+       cursor: pointer;
+       background-color: transparent;
+       border: none
+     }
+
+     .menu-mobile {
+       width: 35px;
+       height: 4px;
+       border-radius: 10px;
+       background: #ffffff;
+       margin-bottom: 5px;
+     }
+
+     .menu-mobile-last-element {
+      margin: 0;
+     }
+
+     .main-information {
+       max-width: 640px;
+       font-size: 40px;
+       line-height: 55px;
+     }
+
+     .main-content-container {
+       padding: 0px 35px 0px 35px;
+     }
+
+     .header-logo {
+       padding-left: 80px;
+     }
+
+     .main-content {
+       margin-right: 35px;
+     }
+
+     .container-trands {
+       flex-wrap: wrap;
+       justify-content: space-between;
+       max-width: 1199px;
+       min-width: 100%;
+     }
+
+     .trand-title {
+       margin: 0 auto;
+       font-size: 18px;
+     }
+
+     .card-trands {
+      width: 382px;
+      margin: 0px 0px 2px 0px;
+     }
+
+     .card-trands-garden {
+       background-image: url(../img/tablet/base1.jpg);
+     }
+
+     .card-trands-chees {
+       background-image: url(../img/tablet/base2.jpg);
+     }
+
+     .card-trands-mountains {
+       background-image: url(../img/tablet/base3.jpg);
+     }
+
+     .card-trands-lemon {
+       background-image: url(../img/tablet/base4.jpg);
+     }
+
+     .trands-slogan {
+       font-size: 17px;
+       line-height: 22px;
+     }
+
+     .block-main-posts {
+       flex-direction: column;
+     }
+
+     .container-content {
+       width: 100%;
+     }
+
+     .container-image {
+       max-width: 100%;
+       margin: 0px 0px 16px 0px;
+     }
+
+     .image-content {
+       min-width: 100%;
+     }
+
+     .main-topik {
+       width: 100%;
+       font-size: 17px;
+       line-height: 22px;
+     }
+
+     .field-one {
+       font-size: 13px;
+     }
+
+     .field-two {
+       font-size: 13px;
+     }
+
+     .container-features {
+       width: 768px;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+       padding: 0px 57px 0px 57px;
+       box-sizing: border-box;
+     }
+
+     .card-features {
+       width: 293px;
+       margin: 0px 0px 80px 0px;
+     }
+
+     .card-features-indent {
+       margin-right: 68px;
+     }
+
+     .main-title-features {
+       font-size: 17px;
+       line-height: 22px;
+     }
+
+     .footer-block {
+       width: 100%;
+       padding: 0px 35px 0px 35px;
+     }
+
+     .container-footer {
+       margin: 0px 0px 50px 0px;
+     }
+
+     .popup-hidden {
+       display: none;
+     }
+
+     .form-container-popup {
+       width: 50%;
+     }
    }
 
-   .header {
-     width: 100%;
-     min-width: 768px;
-     min-height: 392px;
-   }
+   @media (orientation: landscape) {
+     .page-container {
+       width: 1200px;
+     }
 
-   .header-container {
-     justify-content: flex-start;
-   }
+     .main-content-container {
+      justify-content: space-around;
+      margin: 0;
+     }
 
-   .nav-menu {
-     display: none;
-   }
+     .main-content {
+      margin-right: 45px;
+     }
 
-   .nav-menu-mobile {
-     width: 48px;
-     height: 48px;
-     display: flex;
-     flex-direction: column;
-     position: absolute;
-     top: 31px;
-     right: 65px;
-     z-index: 1;
-     opacity: 0.6;
-     cursor: pointer;
-     background-color: transparent;
-     border: none
-   }
+     .card-trands {
+       margin-bottom: 2px;
+     }
 
-   .menu-mobile {
-     width: 35px;
-     height: 4px;
-     border-radius: 10px;
-     background: #ffffff;
-     margin-bottom: 5px;
-   }
-
-   .menu-mobile:last-child {
-     margin-bottom: 0px;
-   }
-
-   .main-information {
-     max-width: 640px;
-     font-size: 40px;
-     line-height: 55px;
-   }
-
-   .main-content-container {
-     padding: 0px 35px 0px 35px;
-   }
-
-   .header-logo {
-     padding-left: 80px;
-   }
-
-   .main-content {
-     margin-right: 35px;
-   }
-
-   .container-trands {
-     flex-wrap: wrap;
-     justify-content: space-between;
-     max-width: 1199px;
-     min-width: 100%;
-   }
-
-   .trand-title {
-     margin: 0 auto;
-     font-size: 18px;
-   }
-
-   .card-trands {
-     width: 49.8%;
-     margin: 0px 0px 3px 0px;
-   }
-
-   .card-trands-garden {
-     background-image: url(../img/tablet/base1.jpg);
-   }
-
-   .card-trands-chees {
-     background-image: url(../img/tablet/base2.jpg);
-   }
-
-   .card-trands-mountains {
-     background-image: url(../img/tablet/base3.jpg);
-   }
-
-   .card-trands-lemon {
-     background-image: url(../img/tablet/base4.jpg);
-   }
-
-   .trands-slogan {
-     font-size: 17px;
-     line-height: 22px;
-   }
-
-   .block-main-posts {
-     flex-direction: column;
-   }
-
-   .container-content {
-     width: 100%;
-   }
-
-   .container-image {
-     max-width: 100%;
-     margin: 0px 0px 16px 0px;
-   }
-
-   .image-content {
-     min-width: 100%;
-   }
-
-   .main-topik {
-     width: 100%;
-     font-size: 17px;
-     line-height: 22px;
-   }
-
-   .field-one {
-     font-size: 13px;
-   }
-
-   .field-two {
-     font-size: 13px;
-   }
-
-   .container-features {
-     width: 768px;
-     justify-content: flex-start;
-     flex-wrap: wrap;
-     padding: 0px 57px 0px 57px;
-     box-sizing: border-box;
-   }
-
-   .card-features {
-     width: 293px;
-     margin: 0px 0px 80px 0px;
-   }
-
-   .card-features-indent {
-     margin-right: 68px;
-   }
-
-   .main-title-features {
-     font-size: 17px;
-     line-height: 22px;
-   }
-
-   .footer-block {
-     width: 100%;
-     padding: 0px 35px 0px 35px;
-   }
-
-   .container-footer {
-     margin: 0px 0px 50px 0px;
-   }
-
-   .popup-hidden {
-     display: none;
-   }
-
-   .form-container-popup {
-     width: 50%;
+     .container-trands-meta {
+       margin: 0px 10px 16px 10px;
+       padding: 30px 0px 32px 0px;
+     }
    }
  }
 
  /*-------------------------------------------------------------------*/
  /*Mobile:*/
  @media (max-width: 641px) {
-   .page-container {
-     width: 100%;
-     min-width: 320px;
+
+   @media (orientation: portrait) {
+     .page-container {
+       width: 100%;
+       min-width: 320px;
+     }
+
+     .header {
+       display: flex;
+       flex-direction: column;
+       background-image: url(../img/mobile/banner.jpg);
+       min-height: 640px;
+       min-width: 320px;
+       margin-bottom: 45px;
+     }
+
+     .header-container {
+       width: 100%;
+       margin-top: 150px;
+     }
+
+     .header-logo {
+       z-index: 1;
+       width: 100%;
+       margin-left: 12.5%;
+       margin-right: 12.5%;
+     }
+
+     .nav-menu {
+       display: none;
+     }
+
+     .nav-menu-mobile {
+       width: 48px;
+       height: 48px;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 31px;
+       right: 31px;
+       z-index: 1;
+       opacity: 0.6;
+       cursor: pointer;
+       background-color: transparent;
+       border: none
+     }
+
+     .menu-mobile {
+       width: 35px;
+       height: 4px;
+       border-radius: 10px;
+       background: #ffffff;
+       margin-bottom: 5px;
+     }
+
+     .menu-mobile-last-element {
+      margin: 0;
+     }
+
+     .main-information {
+       width: 76.95%;
+       font-size: 26px;
+       line-height: 36px;
+     }
+
+     .trand-title {
+       font-size: 16px;
+     }
+
+     .main-content-container {
+       flex-direction: column;
+       min-width: 320px;
+       margin: 0;
+     }
+
+     .trand-content {
+       margin: 0px 4px 0px 0px;
+       width: 100%;
+     }
+
+     .main-content {
+       min-width: 320px;
+       width: 100%;
+       margin: 0;
+       padding-left: 15px;
+       padding-right: 15px;
+     }
+
+     .container-trands {
+       min-width: 320px;
+       flex-direction: column;
+     }
+
+     .card-trands {
+       width: 100%;
+       margin-bottom: 2px;
+     }
+
+     .card-trands-garden {
+       background-image: url(../img/mobile/base1.jpg);
+     }
+
+     .card-trands-chees {
+       background-image: url(../img/mobile/base2.jpg);
+     }
+
+     .card-trands-mountains {
+       background-image: url(../img/mobile/base3.jpg);
+     }
+
+     .card-trands-lemon {
+       background-image: url(../img/mobile/base4.jpg);
+     }
+
+     .container-trands-meta {
+       width: 100%;
+       margin: 0px 15px 25px 15px;
+       padding: 30px 20px 40px 20px;
+       position: static;
+     }
+
+     .trands-slogan {
+       font-size: 16px;
+       line-height: 20px;
+     }
+
+     .block-main-posts {
+       flex-direction: column;
+       margin-bottom: 35px;
+       border-bottom: solid #eeeeee 4px;
+     }
+
+     .container-image {
+       margin: 0px 0px 14px 0px;
+       min-width: 100%;
+     }
+
+     .image-content {
+       width: 100%;
+     }
+
+     .link-topik:hover {
+       text-decoration: underline;
+     }
+
+     .main-topik {
+       width: 100%;
+       font-size: 16px;
+       line-height: 20px;
+       margin: 0px;
+     }
+
+     .main-topik:hover {
+       color: #b59f5b;
+     }
+
+     .block-author-date {
+       width: 100%;
+       padding-top: 10px;
+       margin: 0;
+     }
+
+     .block-text {
+       width: 100%;
+       font-size: 14px;
+       line-height: 20px;
+       padding-bottom: 20px;
+       padding-top: 10px;
+     }
+
+     .aside-bar {
+       width: 100%;
+       flex-direction: column;
+       margin-bottom: 43px;
+       box-sizing: border-box;
+       padding-left: 15px;
+       padding-right: 15px;
+     }
+
+     .side-bar-title {
+       font-size: 16px;
+     }
+
+     .block-posts {
+       width: 100%;
+       margin-bottom: 44px;
+     }
+
+     .posts {
+       display: flex;
+       margin-bottom: 22px;
+     }
+
+     .posts-last-element {
+       margin-bottom: 0px;
+     }
+
+     .mini-posts {
+       width: 100%;
+       margin-bottom: 62px;
+     }
+
+     .form-row {
+       width: 100%;
+     }
+
+     .field-one {
+       width: 100%;
+       font-size: 13px;
+     }
+
+     .field-two {
+       width: 100%;
+       margin-bottom: 17px;
+       font-size: 13px;
+     }
+
+     .main-side-posts {
+       margin-bottom: 40px;
+     }
+
+     .aside-posts {
+       justify-content: center;
+       width: 100%;
+     }
+
+     .tags-container {
+       padding-right: 4px;
+       padding-bottom: 6px;
+     }
+
+     .aside-posts-categories {
+       width: 100%;
+     }
+
+     .container-features {
+       flex-wrap: wrap;
+       width: 286px;
+     }
+
+     .card-features {
+       margin: 0px 0px 61px 0px;
+     }
+
+     .card-features-last-element {
+       margin: 0;
+     }
+
+     .main-title-features {
+       font-size: 17px;
+       line-height: 22px;
+     }
+
+     .footer-block {
+       width: 100%;
+     }
+
+     .container-footer {
+       margin: 0px 0px 50px 0px;
+     }
+
+     .popup-hidden {
+       display: none;
+     }
+
+     .form-container-popup {
+       width: 91%;
+     }
    }
 
-   .header {
-     display: flex;
-     flex-direction: column;
-     background-image: url(../img/mobile/banner.jpg);
-     min-height: 640px;
-     min-width: 320px;
-     margin-bottom: 45px;
-   }
+   @media (orientation: landscape) {
+     .page-container {
+       width: 1200px;
+     }
 
-   .header-container {
-     width: 100%;
-     margin-top: 150px;
-   }
+     .container-trands {
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-between;
+     }
 
-   .header-logo {
-     z-index: 1;
-     width: 100%;
-     margin-left: 12.5%;
-     margin-right: 12.5%;
-   }
-
-   .nav-menu {
-     display: none;
-   }
-
-   .nav-menu-mobile {
-     width: 48px;
-     height: 48px;
-     display: flex;
-     flex-direction: column;
-     position: absolute;
-     top: 31px;
-     right: 31px;
-     z-index: 1;
-     opacity: 0.6;
-     cursor: pointer;
-     background-color: transparent;
-     border: none
-   }
-
-   .menu-mobile {
-     width: 35px;
-     height: 4px;
-     border-radius: 10px;
-     background: #ffffff;
-     margin-bottom: 5px;
-   }
-
-   .menu-mobile:last-child {
-     margin-bottom: 0px;
-   }
-
-   .main-information {
-     width: 76.95%;
-     font-size: 26px;
-     line-height: 36px;
-   }
-
-   .trand-title {
-     font-size: 16px;
-   }
-
-   .main-content-container {
-     flex-direction: column;
-     min-width: 320px;
-     margin: 0;
-   }
-
-   .trand-content {
-     margin: 0px 4px 0px 0px;
-     width: 100%;
-   }
-
-   .main-content {
-     min-width: 320px;
-     width: 100%;
-     margin: 0;
-     padding-left: 15px;
-     padding-right: 15px;
-   }
-
-   .container-trands {
-     min-width: 320px;
-     flex-direction: column;
-   }
-
-   .card-trands {
-     width: 100%;
-     margin-bottom: 2px;
-   }
-
-   .card-trands-garden {
-     background-image: url(../img/mobile/base1.jpg);
-   }
-
-   .card-trands-chees {
-     background-image: url(../img/mobile/base2.jpg);
-   }
-
-   .card-trands-mountains {
-     background-image: url(../img/mobile/base3.jpg);
-   }
-
-   .card-trands-lemon {
-     background-image: url(../img/mobile/base4.jpg);
-   }
-
-   .container-trands-meta {
-     width: 100%;
-     margin: 0px 15px 25px 15px;
-     padding: 30px 20px 40px 20px;
-     position: static;
-   }
-
-   .trands-slogan {
-     font-size: 16px;
-     line-height: 20px;
-   }
-
-   .block-main-posts {
-     flex-direction: column;
-     margin-bottom: 35px;
-     border-bottom: solid #eeeeee 4px;
-   }
-
-   .container-image {
-     margin: 0px 0px 14px 0px;
-     min-width: 100%;
-   }
-
-   .image-content {
-     width: 100%;
-   }
-
-   .link-topik:hover {
-     text-decoration: underline;
-   }
-
-   .main-topik {
-     width: 100%;
-     font-size: 16px;
-     line-height: 20px;
-     margin: 0px;
-   }
-
-   .main-topik:hover {
-     color: #b59f5b;
-   }
-
-   .block-author-date {
-     width: 100%;
-     padding-top: 10px;
-     margin: 0;
-   }
-
-   .block-text {
-     width: 100%;
-     font-size: 14px;
-     line-height: 20px;
-     padding-bottom: 20px;
-     padding-top: 10px;
-   }
-
-   .aside-bar {
-     width: 100%;
-     flex-direction: column;
-     margin-bottom: 43px;
-     box-sizing: border-box;
-     padding-left: 15px;
-     padding-right: 15px;
-   }
-
-   .side-bar-title {
-     font-size: 16px;
-   }
-
-   .block-posts {
-     width: 100%;
-     margin-bottom: 44px;
-   }
-
-   .posts {
-     display: flex;
-     margin-bottom: 22px;
-   }
-
-   .posts:last-child {
-     margin-bottom: 0px;
-   }
-
-   .mini-posts {
-     width: 100%;
-     margin-bottom: 62px;
-   }
-
-   .form-row {
-     width: 100%;
-   }
-
-   .field-one {
-     width: 100%;
-     font-size: 13px;
-   }
-
-   .field-two {
-     width: 100%;
-     margin-bottom: 17px;
-     font-size: 13px;
-   }
-
-   .main-side-posts {
-     margin-bottom: 40px;
-   }
-
-   .aside-posts {
-     justify-content: center;
-     width: 100%;
-   }
-
-   .tags-container {
-     padding-right: 4px;
-     padding-bottom: 6px;
-   }
-
-   .aside-posts-categories {
-     width: 100%;
-   }
-
-   .container-features {
-     flex-wrap: wrap;
-     width: 286px;
-   }
-
-   .card-features {
-     margin: 0px 0px 61px 0px;
-   }
-
-   .card-features:last-child {
-     margin-bottom: 0px;
-   }
-
-   .main-title-features {
-     font-size: 17px;
-     line-height: 22px;
-   }
-
-   .footer-block {
-     width: 100%;
-   }
-
-   .container-footer {
-     margin: 0px 0px 50px 0px;
-   }
-
-   .popup-hidden {
-     display: none;
-   }
-
-   .form-container-popup {
-     width: 91%;
-   }
- }
-
- /* Mobile-landscape */
- @media (orientation: landscape) and (max-width: 641px) {
-
-   .page-container {
-     width: 100%;
-   }
-
-   .container-trands {
-     flex-wrap: wrap;
-     flex-direction: row;
-     justify-content: space-between;
-   }
-
-   .card-trands {
-     width: 49.8%;
-     margin: 0px 0px 2px 0px;
-   }
- }
-
- /* Tablet-landscape */
- @media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) {
-
-   .page-container {
-     min-width: 768px;
-   }
-
-   .container-trands {
-     flex-wrap: wrap;
-     flex-direction: row;
-   }
-
-   .card-trands {
-     width: 24.8%;
-     margin-bottom: 2px;
-   }
-
-   .container-trands-meta {
-     margin: 0px 10px 16px 10px;
-     padding: 30px 0px 32px 0px;
+     .card-trands {
+       width: 49.8%;
+       margin: 0px 0px 2px 0px;
+     }
    }
  }
