@@ -26,8 +26,8 @@
  /*-------------------------------------------------------------------*/
  /*Desktop-first:*/
  .page-container {
-  max-width: 1700px;
-  margin: 0 auto;
+   max-width: 1700px;
+   margin: 0 auto;
  }
 
  /*Шапка:*/
@@ -43,6 +43,7 @@
    text-transform: uppercase;
    color: #ffffff;
    margin: 0px auto 57px auto;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .header::after {
@@ -54,28 +55,52 @@
    right: 0;
    bottom: 0;
    left: 0;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .header-container {
    display: flex;
    position: relative;
-   margin: 0 auto;
-   margin-bottom: 55px;
+   margin: 0px auto 55px auto;
    justify-content: space-around;
+   padding-top: 26px;
  }
 
  .header-logo {
    z-index: 1;
    width: 190px;
-   padding-top: 26px;
  }
 
  .nav-menu-mobile {
    display: none;
+   width: 48px;
+   height: 48px;
+
+   flex-direction: column;
+   position: absolute;
+   top: 31px;
+   right: 31px;
+   z-index: 1;
+   opacity: 0.6;
+   cursor: pointer;
+   background-color: transparent;
+   border: none
+ }
+
+ .menu-mobile {
+   width: 35px;
+   height: 4px;
+   border-radius: 10px;
+   background: #ffffff;
+   margin-bottom: 5px;
+ }
+
+ .menu-mobile-last-element {
+   margin: 0;
  }
 
  .nav-menu {
-   padding-top: 45px;
+   padding-top: 19px;
    z-index: 1;
  }
 
@@ -92,12 +117,8 @@
  }
 
  .menu-list-item-last-element {
-  margin: 0;
+   margin: 0;
  }
-
- .card-trands-last-element {
-  margin: 0;
-}
 
  .menu-link {
    text-decoration: none;
@@ -109,10 +130,6 @@
 
  .menu-link:hover {
    text-decoration: underline;
- }
-
- .nav-menu-mobile {
-   display: none;
  }
 
  .main-information {
@@ -134,8 +151,8 @@
  .main-content-container {
    max-width: 1200px;
    display: flex;
+   justify-content: center;
    margin: 0 auto 64px auto;
-   box-sizing: border-box;
  }
 
  /*Общий блок с основными блоками:*/
@@ -156,6 +173,8 @@
    max-width: 1700px;
    margin: 0 auto;
    margin-bottom: 64px;
+   padding: 0px 4px 0px 4px;
+   box-sizing: border-box;
  }
 
  .trand-title {
@@ -168,6 +187,7 @@
    text-transform: uppercase;
    text-align: center;
    color: rgb(15, 13, 14);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .card-trands {
@@ -180,6 +200,8 @@
    display: flex;
    align-items: flex-end;
    width: 25%;
+   border-radius: 20px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .card-trands::after {
@@ -191,6 +213,8 @@
    right: 0;
    bottom: 0;
    left: 0;
+   border-radius: 20px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .card-trands-garden {
@@ -210,8 +234,8 @@
  }
 
  .card-trands-last-element {
-  margin: 0;
-}
+   margin: 0;
+ }
 
  .container-trands-meta {
    display: flex;
@@ -222,6 +246,7 @@
    padding: 30px 32px 32px 32px;
    box-sizing: border-box;
    z-index: 1;
+   border-radius: 10px;
  }
 
  .trands-slogan {
@@ -257,6 +282,11 @@
    transition: all 0.8s ease 0s;
  }
 
+ .image-content {
+   border-radius: 15px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+
  /*Блок с ссылками постов*/
  .block-link-topik {
    display: flex;
@@ -273,6 +303,7 @@
    text-transform: uppercase;
    margin-right: 15px;
    color: #b59f5b;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .link-topik:hover {
@@ -292,6 +323,7 @@
    text-decoration: none;
    text-transform: uppercase;
    color: #0f0d0e;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .main-topik:hover {
@@ -375,28 +407,24 @@
 
  .block-sidebar-posts {
    display: flex;
+   margin-bottom: 62px;
  }
 
  .posts {
    display: flex;
-   height: 70px;
-   margin-bottom: 22px;
- }
-
- .posts-last-element {
-  margin: 0;
+   margin-right: 19px;
  }
 
  /*Общий блок с мини-контентным изображением*/
  .posts-image {
-   margin-right: 19px;
+   border-radius: 10px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  /*Общий блок с мини-постом*/
  .mini-posts {
    width: 183px;
    height: 70px;
-   margin-bottom: 62px;
  }
 
  .posts-date {
@@ -419,6 +447,7 @@
    text-decoration: none;
    text-transform: uppercase;
    color: #000000;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .posts-topic:hover {
@@ -503,7 +532,7 @@
    cursor: pointer;
  }
 
- .button-default:hover {
+ .button-subscribe:hover {
    background-color: #323232;
  }
 
@@ -526,6 +555,7 @@
  .tags-item {
    display: block;
    border: 3px solid #eeeeee;
+   border-radius: 5px;
    padding-left: 13px;
    padding-right: 13px;
    padding-bottom: 4px;
@@ -582,7 +612,7 @@
  .container-features {
    display: flex;
    justify-content: center;
-   width: 1200px;
+   width: 90%;
    margin: 0 auto 64px auto;
 
  }
@@ -591,6 +621,12 @@
    display: flex;
    width: 300px;
    flex-direction: column;
+ }
+
+ .posts-image-features {
+   width: 100%;
+   border-radius: 15px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .card-features-indent {
@@ -610,6 +646,8 @@
    outline: 3px solid #d3c59d;
    outline-offset: 20px;
    flex-grow: 1;
+   border-radius: 3px;
+   z-index: 1;
  }
 
  .main-title-features {
@@ -629,6 +667,7 @@
    font-weight: 400;
    font-size: 15px;
    line-height: 22px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
 
  .link-posts-features {
@@ -686,7 +725,7 @@
    cursor: pointer;
  }
 
- .button-buy:hover {
+ .button-shop:hover {
    background-color: #323232;
  }
 
@@ -708,6 +747,7 @@
    padding-bottom: 30px;
    background-color: #f5f7f6;
    opacity: 0.6;
+   border-radius: 10px;
  }
 
  .socials {
@@ -720,14 +760,20 @@
    margin-right: 25px;
  }
 
- .card-features-last-element {
+ .socials-item-last-element {
    margin: 0;
  }
 
  .social-img {
    width: 20px;
    height: 20px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
  }
+
+ .social-img:hover {
+   opacity: 0.7;
+ }
+
 
  .copyright-footer {
    margin: 0 auto;
@@ -738,6 +784,11 @@
    text-decoration: none;
    text-align: center;
    color: #999999;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+
+ .copyright-footer:hover {
+   color: #5e5e5e
  }
 
  /*Скрытая форма обратной связи*/
@@ -911,30 +962,7 @@
      }
 
      .nav-menu-mobile {
-       width: 48px;
-       height: 48px;
        display: flex;
-       flex-direction: column;
-       position: absolute;
-       top: 43px;
-       right: 65px;
-       z-index: 1;
-       opacity: 0.6;
-       cursor: pointer;
-       background-color: transparent;
-       border: none
-     }
-
-     .menu-mobile {
-       width: 35px;
-       height: 4px;
-       border-radius: 10px;
-       background: #ffffff;
-       margin-bottom: 5px;
-     }
-
-     .menu-mobile-last-element {
-      margin: 0;
      }
 
      .main-information {
@@ -944,7 +972,8 @@
      }
 
      .main-content-container {
-       padding: 0px 35px 0px 35px;
+       padding: 0px 30px 0px 30px;
+       box-sizing: border-box;
      }
 
      .header-logo {
@@ -968,8 +997,8 @@
      }
 
      .card-trands {
-      width: 49.8%;
-      margin: 0px 0px 2px 0px;
+       width: 49.8%;
+       margin: 0px 0px 2px 0px;
      }
 
      .card-trands-garden {
@@ -1069,13 +1098,28 @@
        width: 1200px;
      }
 
+     .header-container {
+       justify-content: flex-start;
+       padding-left: 68px;
+     }
+
+     .nav-menu {
+       display: none;
+     }
+
+     .nav-menu-mobile {
+       display: flex;
+       top: 42px;
+       right: 68px;
+     }
+
      .main-content-container {
-      justify-content: space-around;
-      margin: 0;
+       justify-content: center;
+       margin: 0;
      }
 
      .main-content {
-      margin-right: 45px;
+       margin-right: 45px;
      }
 
      .card-trands {
@@ -1125,30 +1169,7 @@
      }
 
      .nav-menu-mobile {
-       width: 48px;
-       height: 48px;
        display: flex;
-       flex-direction: column;
-       position: absolute;
-       top: 31px;
-       right: 31px;
-       z-index: 1;
-       opacity: 0.6;
-       cursor: pointer;
-       background-color: transparent;
-       border: none
-     }
-
-     .menu-mobile {
-       width: 35px;
-       height: 4px;
-       border-radius: 10px;
-       background: #ffffff;
-       margin-bottom: 5px;
-     }
-
-     .menu-mobile-last-element {
-      margin: 0;
      }
 
      .main-information {
@@ -1188,6 +1209,11 @@
      .card-trands {
        width: 100%;
        margin-bottom: 2px;
+       border-radius: 10px;
+     }
+
+     .card-trands::after {
+       border-radius: 10px;
      }
 
      .card-trands-garden {
@@ -1273,6 +1299,7 @@
 
      .side-bar-title {
        font-size: 16px;
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
      }
 
      .block-posts {
@@ -1282,16 +1309,10 @@
 
      .posts {
        display: flex;
-       margin-bottom: 22px;
-     }
-
-     .posts-last-element {
-       margin-bottom: 0px;
      }
 
      .mini-posts {
        width: 100%;
-       margin-bottom: 62px;
      }
 
      .form-row {
@@ -1329,15 +1350,11 @@
 
      .container-features {
        flex-wrap: wrap;
-       width: 286px;
      }
 
      .card-features {
+       width: 80%;
        margin: 0px 0px 61px 0px;
-     }
-
-     .card-features-last-element {
-       margin: 0;
      }
 
      .main-title-features {
@@ -1375,7 +1392,12 @@
 
      .card-trands {
        width: 49.8%;
-       margin: 0px 0px 2px 0px;
+       margin: 0px 0px 4px 0px;
+       border-radius: 10px;
+     }
+
+     .card-trands::after {
+       border-radius: 10px;
      }
    }
  }
