@@ -136,8 +136,8 @@
  }
 
  .menu-mobile.active span:nth-child(1) {
-     left: 11px;
-     top: 7px;
+     left: 13px;
+     top: 8px;
  }
 
  .menu-mobile.active span:nth-child(2) {
@@ -156,13 +156,13 @@
  }
 
  .menu-mobile.active span:nth-child(5) {
-     left: 11px;
-     top: 23px;
+left: 13px;
+    top: 21px;
  }
 
  .menu-mobile.active span:nth-child(6) {
      left: calc(23% - 5px);
-     top: 23px;
+     top: 22px;
  }
 
 .nav-menu.active, .nav-menu-list.active {
