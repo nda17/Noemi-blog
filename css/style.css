@@ -77,67 +77,67 @@
    width: 190px;
  }
 
-.menu-mobile {
-    width: 60px;
-    height: 45px;
-    position: relative;
-    transition-duration: 1s;
-    margin: 48px auto 12px auto;
-    cursor: pointer;
-}
+ .menu-mobile {
+     width: 60px;
+     height: 45px;
+     position: relative;
+     transition-duration: 1s;
+     margin: 48px auto 12px auto;
+     cursor: pointer;
+ }
 
-.menu-mobile span {
-    height: 2px;
-    width: 40px;
-    background-color: #337AB7;
-    border-radius: 20px;
-    position: absolute;
-    transition-duration: .25s;
-}
+ .menu-mobile span {
+     height: 2px;
+     width: 40px;
+     background-color: #337AB7;
+     border-radius: 20px;
+     position: absolute;
+     transition-duration: .25s;
+ }
 
-.menu-mobile span:before {
-    left: 0;
-    position: absolute;
-    top: -18px;
-    height: 9px;
-    width: 60px;
-    background-color: #337AB7;
-    content: "";
-    border-radius: 20px;
-    transition-duration: .25s;
-}
+ .menu-mobile span:before {
+     left: 0;
+     position: absolute;
+     top: -18px;
+     height: 9px;
+     width: 60px;
+     background-color: #337AB7;
+     content: "";
+     border-radius: 20px;
+     transition-duration: .25s;
+ }
 
-.menu-mobile span:after {
-    left: 0;
-    position: absolute;
-    top: 18px;
-    height: 9px;
-    width: 60px;
-    background-color: #337AB7;
-    content: "";
-    border-radius: 20px;
-    transition-duration: .25s;
-}
+ .menu-mobile span:after {
+     left: 0;
+     position: absolute;
+     top: 18px;
+     height: 9px;
+     width: 60px;
+     background-color: #337AB7;
+     content: "";
+     border-radius: 20px;
+     transition-duration: .25s;
+ }
 
-.menu-mobile.active span {
-    background: transparent;
-}
+ .menu-mobile.active span {
+     background: transparent;
+ }
 
-.menu-mobile.active span:before {
-    transition: transform .25s;
-    transform: rotateZ(45deg);
-    top: 0;
-}
+ .menu-mobile.active span:before {
+     transition: transform .25s;
+     transform: rotateZ(45deg);
+     top: 0;
+ }
 
-.menu-mobile.active span:after {
-    transition: transform .25s;
-    transform: rotateZ(-405deg);
-    top: 0;
-}
+ .menu-mobile.active span:after {
+     transition: transform .25s;
+     transform: rotateZ(-405deg);
+     top: 0;
+ }
 
-.nav-menu.active, .nav-menu-list.active {
- 
-}
+ .nav-menu.active, .nav-menu-list.active {
+
+ }
 
  .nav-menu {
    padding-top: 19px;
