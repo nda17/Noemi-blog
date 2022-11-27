@@ -84,6 +84,7 @@
      transition-duration: 1s;
      margin: 48px auto 12px auto;
      cursor: pointer;
+     z-index: 100;
  }
 
  .menu-mobile span {
