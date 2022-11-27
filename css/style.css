@@ -870,6 +870,10 @@
    display: flex;
  }
 
+.popup-hidden.close {
+   display: none;
+ }
+
  .form-container {
    display: flex;
    justify-content: center;
