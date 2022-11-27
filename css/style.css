@@ -71,7 +71,6 @@
    width: 100%;
    display: flex;
    justify-content: space-between;
-   z-index: 100;
  }
 
  .header-logo {
@@ -107,11 +106,11 @@
     width: 60px;
     height: 45px;
     position: relative;
-/*     margin: 30px auto; */
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
     z-index: 100;
+    padding-left: 80px;
 }
 
  .menu-mobile span {
