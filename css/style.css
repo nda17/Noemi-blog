@@ -870,7 +870,7 @@
    display: flex;
  }
 
-.popup-hidden.close {
+.popup-hidden.not-active {
    display: none;
  }
 
