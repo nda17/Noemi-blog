@@ -84,6 +84,7 @@
      transition-duration: 1s;
      cursor: pointer;
      z-index: 100;
+     display: none;
  }
 
  .menu-mobile span {
