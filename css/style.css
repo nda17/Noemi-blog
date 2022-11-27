@@ -181,6 +181,10 @@
      top: 29px;
  }
 
+.nav-menu.active, .nav-menu-list.active {
+ 
+}
+
  .nav-menu {
    padding-top: 19px;
    z-index: 1;
