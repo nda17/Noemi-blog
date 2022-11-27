@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.popup-close').click(function (event) {
-        $('.popup-hidden').toggleClass('close');
+        $('.popup-hidden').toggleClass('not-active');
     });
 });
 
