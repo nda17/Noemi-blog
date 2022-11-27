@@ -137,12 +137,12 @@
 
  .menu-mobile.active span:nth-child(1) {
      left: 5px;
-     top: 7px;
+     top: 10px;
  }
 
  .menu-mobile.active span:nth-child(2) {
-     left: calc(23% - 5px);
-     top: 7px;
+     left: calc(16% - 5px);
+     top: 10px;
  }
 
  .menu-mobile.active span:nth-child(3) {
@@ -157,12 +157,12 @@
 
  .menu-mobile.active span:nth-child(5) {
      left: 5px;
-     top: 29px;
+     top: 23px;
  }
 
  .menu-mobile.active span:nth-child(6) {
-     left: calc(23% - 5px);
-     top: 29px;
+     left: calc(16% - 5px);
+     top: 23px;
  }
 
 .nav-menu.active, .nav-menu-list.active {
