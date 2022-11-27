@@ -866,6 +866,10 @@
    display: none;
  }
 
+.popup-hidden.active {
+   display: flex;
+ }
+
  .form-container {
    display: flex;
    justify-content: center;
