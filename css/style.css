@@ -67,6 +67,11 @@
    box-sizing: border-box;
  }
 
+ .header-main {
+   display: flex;
+   justify-content: space-between;
+ }
+
  .header-logo {
    z-index: 1;
    width: 190px;
@@ -100,7 +105,7 @@
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 30px auto;
+/*     margin: 30px auto; */
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
