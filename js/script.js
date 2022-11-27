@@ -4,4 +4,10 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.feedback').click(function (event) {
+        $('.popup-hidden').toggleClass('active');
+    });
+});
+
  
