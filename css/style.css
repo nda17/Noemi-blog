@@ -71,7 +71,7 @@
    z-index: 1;
    width: 190px;
  }
-
+/* 
  .nav-menu-mobile {
    display: none;
    width: 48px;
@@ -85,17 +85,18 @@
    cursor: pointer;
    background-color: transparent;
    border: none
- }
+ } */
 
- .menu-mobile {
+/*  .menu-mobile {
    width: 35px;
    height: 4px;
    border-radius: 10px;
    background: #ffffff;
    margin-bottom: 5px;
- }
+ } */
 
  .menu-mobile {
+    display: none;
     width: 60px;
     height: 45px;
     position: relative;
@@ -1047,7 +1048,7 @@
        display: none;
      }
 
-     .nav-menu-mobile {
+     .menu-mobile {
        display: flex;
      }
 
@@ -1193,7 +1194,7 @@
        display: none;
      }
 
-     .nav-menu-mobile {
+     .menu-mobile {
        display: flex;
        top: 42px;
        right: 68px;
@@ -1254,7 +1255,7 @@
        display: none;
      }
 
-     .nav-menu-mobile {
+     .menu-mobile {
        display: flex;
      }
 
