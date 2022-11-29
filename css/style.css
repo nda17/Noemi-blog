@@ -1444,6 +1444,15 @@
      .main-content-container {
       width: 1200px
      }
+    
+     .nav-menu {
+       display: none;
+     }
+
+     .menu-mobile {
+       display: flex;
+       align-items: center;
+     }
 
      .container-trands {
        flex-wrap: wrap;
