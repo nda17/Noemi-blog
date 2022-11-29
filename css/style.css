@@ -79,7 +79,6 @@
 
  .menu-mobile {
      width: 60px;
-     height:452px;
      position: relative;
      transition-duration: 1s;
      cursor: pointer;
@@ -88,8 +87,8 @@
  }
 
  .menu-mobile span {
-     height: 9px;
-     width: 60px;
+     height: 2px;
+     width: 45px;
      background-color: #337AB7;
      border-radius: 20px;
      position: absolute;
