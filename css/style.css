@@ -99,8 +99,8 @@
      left: 0;
      position: absolute;
      top: -18px;
-     height: 9px;
-     width: 60px;
+     height: 2px;
+     width: 45px;
      background-color: #337AB7;
      content: "";
      border-radius: 20px;
@@ -111,8 +111,8 @@
      left: 0;
      position: absolute;
      top: 18px;
-     height: 9px;
-     width: 60px;
+     height: 2px;
+     width: 45px;
      background-color: #337AB7;
      content: "";
      border-radius: 20px;
