@@ -78,8 +78,8 @@
  }
 
  .menu-mobile {
-     width: 45px;
-     height: 45px;
+     width: 30px;
+     height: 30px;
      position: relative;
      transition-duration: 1s;
      cursor: pointer;
@@ -89,7 +89,7 @@
 
  .menu-mobile span {
      height: 4px;
-     width: 45px;
+     width: 30px;
      background-color: #ffffff;
      border-radius: 20px;
      position: absolute;
@@ -101,7 +101,7 @@
      position: absolute;
      top: -12px;
      height: 4px;
-     width: 45px;
+     width: 30px;
      background-color: #ffffff;
      content: "";
      border-radius: 20px;
@@ -113,7 +113,7 @@
      position: absolute;
      top: 12px;
      height: 4px;
-     width: 45px;
+     width: 30px;
      background-color: #ffffff;
      content: "";
      border-radius: 20px;
