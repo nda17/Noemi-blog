@@ -1018,6 +1018,7 @@
 
      .menu-mobile {
        display: flex;
+       align-items: center;
      }
 
      .main-information {
