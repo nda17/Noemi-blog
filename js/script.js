@@ -12,11 +12,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.popup-close').click(function (event) {
-        $('.feedback').click;
+        $('.popup-hidden').removeClass('active');
     });
 });
 
-
-
-
- 
