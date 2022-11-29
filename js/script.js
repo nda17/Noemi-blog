@@ -18,25 +18,25 @@ $(document).ready(function () {
 
 
 
+// let page = document.querySelector('.page');
+// let themeButton = document.querySelector('.theme-button');
+
+// themeButton.onclick = function() {
+//   console.log('Кнопка нажата!');
+//   page.classList.remove('light-theme');
+//   page.classList.add('dark-theme');
+// };
 
 
-// const list = document.querySelectorAll('.popup-close')
-//  list.forEach(item =>{ 
-//         item.addEventListener('click', (e) =>{
-//         list.forEach(el=>{ el.classList.remove('active'); });
-//         item.classList.add('active')
-//     })
-// })
 
 
-let list = document.querySelectorAll('.popup-close')
- list.forEach(item =>{
+const list = document.querySelector('.popup-close')
+ list.forEach(item =>{ 
         item.addEventListener('click', (e) =>{
-            item.classList.toggle('active')
-        });
-    });
-
-
+        list.forEach(el=>{ popup-hidden.classList.remove('active'); });
+        item.classList.add('active')
+    })
+})
 
 
 
