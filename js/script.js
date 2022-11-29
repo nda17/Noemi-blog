@@ -28,15 +28,22 @@ $(document).ready(function () {
 // };
 
 
-
-
-const list = document.querySelector('.popup-close')
+const list = document.querySelectorAll('.popup-close')
  list.forEach(item =>{ 
         item.addEventListener('click', (e) =>{
-        list.forEach(el=>{ popup-hidden.classList.remove('active'); });
+        list.forEach(el=>{ el.classList.remove('active'); });
         item.classList.add('active')
-    })
-})
+    });
+});
+
+
+// const list = document.querySelector('.popup-close')
+//  list.forEach(item =>{ 
+//         item.addEventListener('click', (e) =>{
+//         list.forEach(el=>{ popup-hidden.classList.remove('active'); });
+//         item.classList.add('active')
+//     })
+// })
 
 
 
