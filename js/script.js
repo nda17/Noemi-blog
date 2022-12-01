@@ -1,8 +1,8 @@
-$(document).ready(function () {
-    $('.menu-mobile').click(function (event) {
-        $('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden').toggleClass('active');
-    });
-});
+// $(document).ready(function () {
+//     $('.menu-mobile').click(function (event) {
+//         $('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden').toggleClass('active');
+//     });
+// });
 
 // $(document).ready(function () {
 //     $('.feedback').click(function (event) {
@@ -19,13 +19,14 @@ $(document).ready(function () {
 
 
 
-// let page = document.querySelector('.page');
-// let themeButton = document.querySelector('.theme-button');
 
-// themeButton.onclick = function() {
-//   page.classList.remove('light-theme');
-//   page.classList.add('dark-theme');
-// };
+let listMenu- = document.querySelector('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden');
+let menuMobile = document.querySelector('.menu-mobile');
+
+menuMobile.onclick = function() {
+  listMenu.classList.remove('.active');
+  listMenu.classList.add('.active');
+};
 
 
 
