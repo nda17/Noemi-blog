@@ -33,8 +33,8 @@ $(document).ready(function () {
 let closeButton = document.querySelector('.popup-close')
  closeButton.forEach(item => { 
         item.addEventListener('click', (e) =>{
-        closeButton.forEach(el=>{ popup-hidden.classList.remove('active'); });
-        item.classList.add('active');
+        closeButton.forEach(el=>{ popup-hidden.classList.remove('activeSSS'); });
+        item.classList.add('activeSSS');
     });
 });
 
