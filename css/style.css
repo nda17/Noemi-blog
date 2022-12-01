@@ -907,6 +907,7 @@
    flex-direction: column;
    width: 390px;
    z-index: 100;
+   align-items: flex-end;
  }
 
  .popup-close {
@@ -920,8 +921,6 @@
    border: none;
    text-indent: -9999px;
    cursor: pointer;
-   position: relative;
-   left: 370px;
  }
 
  .popup-container {
@@ -1466,11 +1465,24 @@
 
      .form-container-popup {
        width: 88%;
-       height: 80%;
-       display: flex;
-       justify-content: center;
-       align-items: flex-end;
      }
+    
+     .title-block-features {
+       margin: 0px 0px 10px 0px;
+     }
+      
+     .form-hint {
+       margin-bottom: 5px;
+     }
+    
+     .form-popup-indent {
+       padding-top: 10px;
+     }
+    
+     .field-popup-textarea {
+       min-height: 91px;
+     }
+    
    }
 
    @media (orientation: landscape) {
