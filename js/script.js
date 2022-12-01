@@ -8,7 +8,7 @@ document.querySelector('.feedback').onclick = function() {
 };
 
 document.querySelector('.popup-close').onclick = function() {
-  document.querySelector('.popup-hidden').classList.remove('active');
+  document.querySelector('.popup-hidden').classList.toggle('active');
 };
 
 
