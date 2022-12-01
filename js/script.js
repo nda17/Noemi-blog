@@ -17,10 +17,7 @@ $(document).ready(function () {
 // });
 
 
-document.querySelectorAll('.popup-close').addEventListener('click', (e) => {
-    popup-hidden.classList.add('activeSSS');
-    popup-hidden.classList.remove('activeSSS');
-};
+
 
 // let page = document.querySelector('.page');
 // let themeButton = document.querySelector('.theme-button');
@@ -33,13 +30,20 @@ document.querySelectorAll('.popup-close').addEventListener('click', (e) => {
 
 
 
-// const list = document.querySelector('.popup-close')
-//  list.forEach(item =>{ 
-//         item.addEventListener('click', (e) =>{
-//         list.forEach(el=>{ popup-hidden.classList.remove('active'); });
-//         item.classList.add('active')
-//     })
-// })
+let closeButton = document.querySelector('.popup-close')
+ closeButton.forEach(item => { 
+        item.addEventListener('click', (e) =>{
+        closeButton.forEach(el=>{ popup-hidden.classList.remove('active'); });
+        item.classList.add('active');
+    });
+});
 
 
+// let closeButton = document.querySelectorAll('.popup-close');
+//     closeButton.classList.add('activeSSS');
+//     closeButton.classList.add('activeSSS');
+//     closeButton.classList.add('activeSSS');
 
+//     popup-hidden.classList.add('activeSSS');
+//     popup-hidden.classList.remove('activeSSS');
+// };
