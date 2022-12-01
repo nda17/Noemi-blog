@@ -99,7 +99,7 @@
  .menu-mobile span:before {
      left: 0;
      position: absolute;
-     top: -12px;
+     top: -9px;
      height: 4px;
      width: 30px;
      background-color: #ffffff;
@@ -111,7 +111,7 @@
  .menu-mobile span:after {
      left: 0;
      position: absolute;
-     top: 12px;
+     top: 9px;
      height: 4px;
      width: 30px;
      background-color: #ffffff;
