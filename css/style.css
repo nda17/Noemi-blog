@@ -921,6 +921,7 @@
    border: none;
    text-indent: -9999px;
    cursor: pointer;
+   z-index: 100;
  }
 
  .popup-container {
