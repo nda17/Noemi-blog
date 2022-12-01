@@ -186,9 +186,12 @@
     background: #000000;
     opacity: 0.96;
     transition: all 0.2s;
+    filter: blur(1px);
+
  }
  
 .nav-menu-hidden.active {
+    filter: none;
     left: 0;
  }
 
