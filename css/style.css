@@ -1261,7 +1261,24 @@
        top: -82%;
        right: 5%;
      }
+    
+    
+     .nav-menu-hidden {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       top: -100%;
+       left: 0;
 
+     }
+ 
+     .nav-menu-hidden.active {
+       top: 0;
+     }
+    
      .main-information {
        width: 76.95%;
        font-size: 26px;
