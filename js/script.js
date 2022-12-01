@@ -34,6 +34,31 @@ document.querySelector('.menu-mobile').onclick = function() {
 
 
 
+document.querySelector('.feedback').onclick = function() {
+  document.querySelector('.popup-hidden').classList.add('active');
+};
+
+document.querySelector('.popup-close').onclick = function() {
+  document.querySelector('.popup-hidden, .feedback').classList.remove('active');
+};
+
+
+
+
+
+// $(document).ready(function () {
+//     $('.feedback').click(function (event) {
+//         $('.popup-hidden').toggleClass('active');
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('.popup-close').click(function (event) {
+//         $('.popup-hidden').removeClass('active');
+//     });
+// });
+
+
 
 
 
