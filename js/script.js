@@ -18,8 +18,8 @@ $(document).ready(function () {
 
 
 document.querySelectorAll('.popup-close').addEventListener('click', (e) => {
-    popup-hidden.classList.add('active');
-    popup-hidden.classList.remove('active');
+    popup-hidden.classList.add('activeSSS');
+    popup-hidden.classList.remove('activeSSS');
 };
 
 // let page = document.querySelector('.page');
