@@ -18,33 +18,43 @@
 
 
 
-
-
 let listMenu- = document.querySelector('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden');
-let menuMobile = document.querySelector('.menu-mobile');
+let menuMobile = document.querySelectorAll('.menu-mobile');
 
-menuMobile.onclick = function() {
-  listMenu.classList.remove('.active');
-  listMenu.classList.add('.active');
+document.querySelectorAll(.menuMobile).addListener("click"), (e) => {
+  
+     listMenu.classList.add('active');
+     listMenu.classList.remove('active');
 };
 
 
 
 
-let closeButton = document.querySelector('.popup-close')
- closeButton.forEach(item => { 
-        item.addEventListener('click', (e) =>{
-        closeButton.forEach(el=>{ popup-hidden.classList.remove('activeSSS'); });
-        item.classList.add('activeSSS');
-    });
-});
 
 
-// let closeButton = document.querySelectorAll('.popup-close');
-//     closeButton.classList.add('activeSSS');
-//     closeButton.classList.add('activeSSS');
-//     closeButton.classList.add('activeSSS');
 
-//     popup-hidden.classList.add('activeSSS');
-//     popup-hidden.classList.remove('activeSSS');
+
+
+
+
+
+// 
+// let menuMobile = document.querySelector('.menu-mobile');
+
+// menuMobile.onclick = function() {
+//   listMenu.classList.remove('.active');
+//   listMenu.classList.add('.active');
 // };
+
+
+
+
+// let closeButton = document.querySelector('.popup-close')
+//  closeButton.forEach(item => { 
+//         item.addEventListener('click', (e) =>{
+//         closeButton.forEach(el=>{ popup-hidden.classList.remove('activeSSS'); });
+//         item.classList.add('activeSSS');
+//     });
+// });
+
+
