@@ -27,15 +27,15 @@
 //      listMenu.classList.remove('active');
 // };
 
-let x = document.querySelectorAll(.menu-mobile, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden);
+
 document.querySelector('.menu-mobile').onclick = function() {
-  document.querySelectorAll('x').classList.toggle('active');
+  document.querySelectorAll('.menu-mobile').classList.toggle('active');
 };
 
 
 
 document.querySelector('.feedback').onclick = function() {
-  document.querySelector('.popup-hidden').classList.add('active');
+  document.querySelector('.popup-hidden').classList.toggle('active');
 };
 
 document.querySelector('.popup-close').onclick = function() {
