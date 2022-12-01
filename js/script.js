@@ -29,7 +29,7 @@
 
 
 document.querySelector('.menu-mobile').onclick = function() {
-  document.querySelector('.menu-mobile').classList.toggle('active');
+  document.querySelector('.menu-mobile, nav-menu').classList.toggle('active');
 };
 
 
