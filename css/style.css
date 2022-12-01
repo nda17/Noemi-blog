@@ -120,6 +120,10 @@
      transition-duration: .25s;
  }
 
+ .menu-mobile.active {
+     display: flex;
+ }
+
  .menu-mobile.active span {
      background: transparent;
  }
