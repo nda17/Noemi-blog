@@ -81,7 +81,7 @@
      width: 30px;
      height: 30px;
      position: relative;
-     transition-duration: 1s;
+/*      transition-duration: 1s; */
      cursor: pointer;
      z-index: 500;
      display: none;
@@ -140,10 +140,6 @@
      top: 0;
  }
 
- .nav-menu.active, .nav-menu-list.active {
-
- }
-
  .nav-menu {
    padding-top: 19px;
    z-index: 1;
@@ -189,7 +185,7 @@
     z-index: 100;
     background: #000000;
     opacity: 0.96;
-    transition: all 0.8s;
+    transition: all 0.2s;
  }
  
 .nav-menu-hidden.active {
