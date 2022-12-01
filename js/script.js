@@ -18,16 +18,19 @@
 
 
 
-let listMenu- = document.querySelector('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden');
-let menuMobile = document.querySelectorAll('.menu-mobile');
+// let listMenu- = document.querySelector('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden');
+// let menuMobile = document.querySelectorAll('.menu-mobile');
 
-document.querySelectorAll(.menuMobile).addListener("click"), (e) => {
+// document.querySelectorAll(.menuMobile).addListener("click"), (e) => {
   
-     listMenu.classList.add('active');
-     listMenu.classList.remove('active');
+//      listMenu.classList.add('active');
+//      listMenu.classList.remove('active');
+// };
+
+
+document.querySelector('.menu-mobile').onclick = function() {
+  document.querySelector('.menu-mobile').classList.add('active');
 };
-
-
 
 
 
