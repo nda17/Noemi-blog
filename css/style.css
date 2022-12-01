@@ -1465,7 +1465,11 @@
      }
 
      .form-container-popup {
-       width: 91%;
+       width: 88%;
+       height: 80%;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
      }
    }
 
