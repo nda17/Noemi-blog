@@ -4,11 +4,11 @@ document.querySelector('.menu-mobile').onclick = function() {
 };
 
 document.querySelector('.feedback').onclick = function() {
-  document.querySelectorAll('.popup-hidden').classList.toggle('active');
+  document.querySelector('.popup-hidden').classList.toggle('active');
 };
 
 document.querySelector('.popup-close').onclick = function() {
-  document.querySelectorAll('.popup-hidden').classList.remove('active');
+  document.querySelector('.popup-hidden').classList.toggle('active');
 };
 
 
@@ -30,9 +30,5 @@ document.querySelector('.popup-close').onclick = function() {
 //     });
 // });
 
-
-
-// let listMenu- = document.querySelector('.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden');
-// let menuMobile = document.querySelectorAll('.menu-mobile');
 
 
