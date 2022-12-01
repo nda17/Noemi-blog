@@ -1,6 +1,11 @@
+let element = document.querySelector(.menu-mobile, .nav-menu, .nav-menu-list, .nav-menu-hidden, .menu-list-hidden); 
 document.querySelector('.menu-mobile').onclick = function() {
-  document.querySelectorAll('.menu-mobile').classList.toggle('active');
+  document.querySelectorAll(element).classList.toggle('active');
 };
+
+// document.querySelector('.menu-mobile').onclick = function() {
+//   document.querySelectorAll('.menu-mobile').classList.toggle('active');
+// };
 
 
 document.querySelector('.feedback').onclick = function() {
