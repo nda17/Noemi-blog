@@ -4,19 +4,23 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.feedback').click(function (event) {
-        $('.popup-hidden').toggleClass('active');
-    });
-});
+// $(document).ready(function () {
+//     $('.feedback').click(function (event) {
+//         $('.popup-hidden').toggleClass('active');
+//     });
+// });
 
-$(document).ready(function () {
-    $('.popup-close').click(function (event) {
-        $('.popup-hidden').removeClass('active');
-    });
-});
+// $(document).ready(function () {
+//     $('.popup-close').click(function (event) {
+//         $('.popup-hidden').removeClass('active');
+//     });
+// });
 
 
+document.querySelectorAll('.popup-close').addEventListener('click', (e) => {
+    popup-hidden.classList.add('active');
+    popup-hidden.classList.remove('active');
+};
 
 // let page = document.querySelector('.page');
 // let themeButton = document.querySelector('.theme-button');
