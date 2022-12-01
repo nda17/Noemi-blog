@@ -3,12 +3,12 @@ document.querySelector('.menu-mobile').onclick = function() {
   document.querySelector('.nav-menu-hidden').classList.toggle('active');
 };
 
-document.querySelectorAll('.feedback').onclick = function() {
+document.querySelector('.feedback').onclick = function() {
   document.querySelectorAll('.popup-hidden').classList.toggle('active');
 };
 
-document.querySelectorAll('.popup-close').onclick = function() {
-  document.querySelectorAll('.popup-hidden').classList.toggle('active');
+document.querySelector('.popup-close').onclick = function() {
+  document.querySelectorAll('.popup-hidden').classList.remove('active');
 };
 
 
