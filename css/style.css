@@ -187,6 +187,9 @@
     opacity: 0.96;
     transition: all .2s;
  }
+
+.nav-menu-logo {
+   display: flex;
  
 .nav-menu-hidden.active {
     left: 0;
