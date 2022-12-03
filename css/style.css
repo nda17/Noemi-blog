@@ -184,7 +184,7 @@
     z-index: 100;
     background: #000000;
     opacity: 0.95;
-    transition: all 1s;
+    transition: all .3s;
  }
 
 .nav-menu-logo {
