@@ -174,12 +174,11 @@
  }
 
 .nav-menu-hidden {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 640px;
     position: absolute;
     top: 0;
     left: -100%;
@@ -1207,6 +1206,7 @@
      }
     
      .nav-menu-hidden.active {
+       display: flex;
        left: 0;
        top: 0;
        display: flex;
@@ -1281,7 +1281,7 @@
     
      .nav-menu-hidden.active {
         left: 0;
-        display: flex;
+        min-height: 640px;
      }
     
     .nav-menu-logo {
