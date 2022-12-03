@@ -1051,6 +1051,18 @@
      .nav-menu {
        display: none;
      }
+    
+     .nav-menu-hidden {
+       min-height: 392px;
+     }
+    
+     .nav-menu-hidden.active {
+       min-height: 392px;
+     }
+    
+     .nav-menu-logo {
+       width: 13%;
+     }
 
      .menu-mobile {
        display: flex;
@@ -1538,6 +1550,14 @@
        align-items: center;
      }
 
+     .nav-menu-hidden {
+         min-height: 450px;
+     }
+
+     .nav-menu-hidden.active {
+         min-height: 450px;
+     }
+    
      .container-trands {
        flex-wrap: wrap;
        flex-direction: row;
