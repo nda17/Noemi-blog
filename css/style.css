@@ -1204,6 +1204,10 @@
        align-items: center;
      }
     
+     .nav-menu-hidden {
+       min-height: 450px;
+     }
+    
      .nav-menu-hidden.active {
        display: flex;
        left: 0;
@@ -1276,6 +1280,10 @@
        position: absolute;
        top: -82%;
        right: 5%;
+     }
+    
+     .nav-menu-hidden {
+        min-height: 640px;
      }
     
      .nav-menu-hidden.active {
