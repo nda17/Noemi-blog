@@ -185,12 +185,11 @@
     left: -100%;
     z-index: 100;
     background: #000000;
-    opacity: 0.96;
-    transition: all .2s;
+    opacity: 0.95;
+    transition: all 1s;
  }
 
 .nav-menu-logo {
-    display: none;
     width: 60%;
  }
  
@@ -1206,8 +1205,16 @@
        display: flex;
        align-items: center;
      }
+    
+     .nav-menu-hidden.active {
+       left: 0;
+       top: 0;
+       display: flex;
+       min-height: 450px;
+     }
 
      .main-content-container {
+       width: 1200px;
        justify-content: center;
        margin: 0;
      }
@@ -1268,20 +1275,7 @@
        right: 5%;
      }
     
-     .nav-menu-hidden {
-/*        display: flex; */
-/*        justify-content: center;
-       align-items: center;
-       width: 100%; */
-/*        height: 100%; */
-/*        position: absolute; */
-/*        top: 0;
-       left: 0; */
-     }
- 
-
      .nav-menu-hidden.active {
-/*         left: -100%; */
         left: 0;
         display: flex;
      }
