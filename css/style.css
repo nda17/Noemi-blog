@@ -190,6 +190,7 @@
 
 .nav-menu-logo {
    display: flex;
+ }
  
 .nav-menu-hidden.active {
     left: 0;
