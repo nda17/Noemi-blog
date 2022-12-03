@@ -1304,6 +1304,7 @@
      }
     
     .nav-menu-logo {
+       width: 21%;
        display: flex;
        margin: 0 auto 25px auto;
      }
@@ -1548,6 +1549,10 @@
      .menu-mobile {
        display: flex;
        align-items: center;
+     }
+    
+     .nav-menu-logo {
+         width: 10%;
      }
 
      .nav-menu-hidden {
