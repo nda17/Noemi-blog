@@ -1270,16 +1270,24 @@
      }
     
      .nav-menu-hidden {
-       display: flex;
+/*        display: flex;
        justify-content: center;
        align-items: center;
        width: 100%;
        height: 100%;
        position: absolute;
        top: -100%;
+       left: 0; */
+       display: block;
+       position: absolute;
+       top: -100%;
        left: 0;
      }
  
+    
+    
+    
+    
      .nav-menu-hidden.active {
        top: 0;
      }
