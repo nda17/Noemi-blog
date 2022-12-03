@@ -1212,6 +1212,10 @@
        display: flex;
        min-height: 450px;
      }
+    
+     .nav-menu-logo {
+       width: 22%;
+     }
 
      .main-content-container {
        width: 1200px;
