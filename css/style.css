@@ -1275,10 +1275,6 @@
        width: 100%;
        height: 100%;
        position: absolute;
-       top: -100%;
-       left: 0; */
-       display: block;
-       position: absolute;
        top: -121%;
        left: 0;
      }
