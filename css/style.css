@@ -1285,7 +1285,7 @@
  
 
      .nav-menu-hidden.active {
-       top: 0;
+        top: -186%;
      }
     
     .nav-menu-logo {
