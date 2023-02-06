@@ -1,5 +1,5 @@
 const menuMobile = document.querySelector('.menu-mobile');
-const mobileMenuHidden = document.querySelector('.nav=menu-hidden');
+const mobileMenuHidden = document.querySelector('.nav-menu-hidden');
 
 function showMobileMenu() {
   menuMobile.classList.toggle('active');
