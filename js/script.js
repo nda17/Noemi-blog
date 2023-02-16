@@ -3,8 +3,8 @@ const menuMobile = document.querySelector('.menu-mobile');
 const showMenu = document.querySelector('.nav-menu');
 const logoImage = document.querySelector('.header-logo-img');
 const title = document.querySelector('.main-information');
-const mobileLogo = document.querySelector('.header-logo-mobile-menu')
-const mobileTitle = document.querySelector('.main-information-mobile-menu')
+const mobileLogo = document.querySelector('.header-logo-mobile-menu');
+const mobileTitle = document.querySelector('.main-information-mobile-menu');
 
 function showMobileMenu() {
   menuMobile.classList.toggle('active');
