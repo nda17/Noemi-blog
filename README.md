@@ -2,5 +2,5 @@
 
 Adaptive and mobile layout
 
-## [Demo](https://nfdmitry.github.io/Noemi-blog/)
+## [Demo](https://nda17.github.io/Noemi-blog/)
 
